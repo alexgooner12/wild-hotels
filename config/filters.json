@@ -1,0 +1,9 @@
+[
+    {
+        "queryParam": "type",
+        "translationKey": "filter-type-headline",
+        "rangeFilter": true,
+        "type": "FilterCheckbox",
+        "values": []
+    }
+]
