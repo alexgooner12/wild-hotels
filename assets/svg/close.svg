@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icon/close</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="account" transform="translate(-1189.000000, -244.000000)">
+            <g id="pop-up" transform="translate(689.000000, 210.000000)">
+                <g id="icon/close" transform="translate(493.000000, 27.000000)">
+                    <path d="M17.3586941,15.1682179 L27.763456,15.1682179 L27.763456,17.3586941 L17.3586941,17.3586941 L17.3586941,27.763456 L15.1682179,27.763456 L15.1682179,17.3586941 L4.76345597,17.3586941 L4.76345597,15.1682179 L15.1682179,15.1682179 L15.1682179,4.76345597 L17.3586941,4.76345597 L17.3586941,15.1682179 Z" transform="translate(16.263456, 16.263456) rotate(-45.000000) translate(-16.263456, -16.263456) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

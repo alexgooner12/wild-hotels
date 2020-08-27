@@ -1,0 +1,190 @@
+html,
+body {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   /*overflow: hidden; // maybe only for desktop*/
+   -webkit-overflow-scrolling: touch;
+   height: auto;
+   width: 100%;
+   background: $white;
+   overflow-x: hidden;
+   @include media-breakpoint-up(xlg) {
+      position: fixed;
+      overflow: hidden;
+   }
+}
+
+label {
+  margin: 0;
+}
+
+.overlay{
+  @include overlayed($black, .25);
+}
+
+.arrow {
+  height: 1rem;
+}
+
+a{
+  &:hover{
+    color: inherit !important;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.w-500 {
+  font-weight: 500;
+}
+
+.line-link {
+  position: relative;
+
+  &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 0.08rem;
+      position: absolute;
+      background-color: $black;
+      // top: calc(100% + 1px);
+      bottom: -.3em;
+  }
+
+  &.beige {
+    &:after {
+      background-color: $beige !important;
+      height: 2px;
+    }
+  }
+
+  &.blue {
+    &:after {
+      background-color: $blue !important;
+      height: 2px;
+    }
+  }
+
+  &.white {
+    &:after {
+      background-color: $white !important;
+    }
+  }
+
+  &.appear {
+      &:after {
+          transition: transform .4s;
+          left: 0;
+          transform-origin: top;
+          transform: translateY(.4em) translateZ(0);
+          opacity: 0;
+      }
+
+      &:hover {
+          &:after {
+              transform: translateY(0) translateZ(0);
+              opacity: 1;
+          }
+      }
+  }
+
+  &.disappear {
+      &:after {
+          transition: transform .4s;
+          left: 0;
+          transform-origin: top;
+      }
+
+      &:hover {
+          &:after {
+              transform: translateY(.4em) translateZ(0);
+              opacity: 0;
+          }
+      }
+  }
+
+  &.shrink {
+      &:after {
+          transition: width .4s;
+          left: 0;
+          width: 100%;
+          pointer-events: none;
+      }
+
+      &:hover {
+          &:after {
+              @include media-breakpoint-up(xl) {
+                  left: 0;
+                  width: 0;
+              }
+          }
+      }
+  }
+
+  &.grow {
+      &:after {
+          transition: width .4s;
+          right: 0;
+          width: 0;
+      }
+
+      &:hover {
+          &:after {
+              @include media-breakpoint-up(xl) {
+                  left: 0;
+                  width: 100%;
+              }
+          }
+      }
+
+      &.nuxt-link-exact-active, &.active {
+          &:after {
+              left: 0;
+              width: 100%;
+          }
+      }
+  }
+}
+
+.fill-white {
+    fill: $white;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.border-line {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.41);
+  width: calc(100% - 20vw);
+  position: absolute;
+  bottom: 0;
+  right: 10vw;
+
+  @include media-breakpoint-down(lg) {
+    width: calc(100% - 6rem);
+    right: 3rem;
+  }
+
+  @include media-breakpoint-down(md) {
+    width: calc(100% - 3.4rem);
+    right: 1.7rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: calc(100% - 2rem);
+    right: 1rem;
+  }
+}
+

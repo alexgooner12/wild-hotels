@@ -1,0 +1,49 @@
+// COLOR CLASSES
+.color {
+    &-white {
+        color: $white;
+    }
+    &-black {
+        color: $black;
+    }
+    &-blue {
+        color: $blue;
+    }
+    &-beige {
+        color: $beige;
+    }
+    &-green {
+        color: $green;
+    }
+    &-orange {
+        color: $orange;
+    }
+}
+
+.bg {
+    &-white {
+        background-color: $white;
+    }
+    &-black {
+        background-color: $black;
+    }
+    &-beige {
+        background-color: $beige;
+    }
+    &-green {
+        background-color: $green;
+    }
+    &-blue {
+        background-color: $blue;
+    }
+    &-light-green {
+        background-color: $lightGreen;
+    }
+    &-light-blue-v2 {
+        background-color: $light-bluev3;
+    }
+    &-blue-v2 {
+        background-color: $blueV2;
+    }
+}
+

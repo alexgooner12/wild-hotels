@@ -1,0 +1,28 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+$white: white;
+$black: #000000;
+$danger: #DC3545;
+
+$blue: #0B58A4;
+$light-bluev3: #3a6b8c;
+$blueV2: #0157A4;
+$beige: #f8f6f7;
+
+$green: #DFECCA;
+$lightGreen: rgba(223, 236, 202, 0.5);
+
+$bodyColor: $black;
+$btnColor: $black;
+
+$grey: #BFBFBF;
+$orange: #EFAB7B;
+
+//FONTS
+$boldFont: 'Larsseit-Bold';
+$mediumFont: 'Larsseit-Medium';
+$lightFont: 'Larsseit-Light';
+$regularFont: 'Larsseit-Regular';
+// $formFontSize: $small-font-size;

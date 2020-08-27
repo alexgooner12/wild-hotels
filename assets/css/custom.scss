@@ -1,0 +1,97 @@
+$spacer: 1rem;
+
+
+$spacers: ();
+
+$s1: $spacer * 1;
+$s2: $spacer * 1.7;
+$s3: $spacer * 3;
+$s4: $spacer * 5.5;
+$s5: 10vw;
+$s6: $spacer * .5;
+$s7: ($s1 / 4);
+$s10: 13vw;
+$s20: 40vw;
+$s30: ($s10 + $s20);
+
+$spacers: map-merge((
+  0: 0,
+  small: ($spacer * .5),
+  1: ($s1),
+  2: ($s2),
+  3: ($s3),
+  4: ($s4),
+  5: ($s5),
+  6: ($s6),
+  7: ($s7)),
+$spacers);
+
+
+// $font-family-sans-serif: "Larsseit";
+// $headings-font-family: "FoundersGroteskMedium";
+
+
+
+$font-size-base:              1rem; // on 1900 px width rem is 24px
+
+$h1-font-size:                $font-size-base * 4;
+$h2-font-size:                $font-size-base * 3;
+$h3-font-size:                $font-size-base * 2.8;
+$h4-font-size:                $font-size-base * 2.533;
+$h5-font-size:                $font-size-base * 1.466;
+$h6-font-size:                $font-size-base * 1.2;
+
+$small-font-size:             .933rem;
+$tiny-font-size:              .8rem;
+$tinyv2-font-size:            .53rem;
+$tinyv3-font-size:            .583rem;
+$large-font-size:             1.33rem;
+$extra-large-font-size:       1.8rem;
+
+$display1-size:               9.3rem;
+$display2-size:               8rem;
+$display3-size:               6.5rem;
+$display4-size:               5rem;
+
+$headings-line-height : 1.1 !default;
+
+$headings-font-weight:        normal !default;
+
+$display1-weight:             700 !default;
+$display2-weight:             700 !default;
+$display3-weight:             700 !default;
+$display4-weight:             700 !default;
+$display-line-height:         $headings-line-height !default;
+
+
+$input-btn-padding-y: 1.6rem;
+$input-btn-padding-x: 3rem;
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: ();
+$sizes: map-merge((
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto
+), $sizes);
+
+$grid-gutter-width: 0;
+
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 80%,
+//   xlg: 92%
+// );
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xlg: 1500px
+);
